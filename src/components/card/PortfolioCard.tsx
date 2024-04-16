@@ -25,7 +25,7 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         {/* Background image styling applied here */}
       </div>
       <div className={styles.content}>
-        <h3 className="text-2xl font-medium">{title}</h3>
+        <h3 className="text-2xl font-medium text-black">{title}</h3>
         <p className="text-sm font-medium text-gray-500">{role}</p>
         <div className="flex items-center space-x-2 mt-2">
           <span className="text-sm font-medium text-gray-500">TechStack:</span>

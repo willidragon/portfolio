@@ -23,7 +23,7 @@ const Sidebar = () => {
         <span />
       </div>
       <div className="aside-inner">
-        <div className="logo ">
+        <div className="">
           <Link href="/">
             <Image src="/imgs/logo.svg" alt="Logo" width={166} height={198} />
           </Link>

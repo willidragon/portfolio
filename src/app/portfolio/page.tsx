@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import PortfolioCard from "@/components/card/PortfolioCard";
 import { PortfolioCardProps } from "@/types/types";
+import AnimatedWavyLine from "@/components/line/AnimatedWavyLine";
 const Portfolio: NextPage = () => {
   const portfolioData: PortfolioCardProps[] = [
     {
@@ -22,6 +23,10 @@ const Portfolio: NextPage = () => {
           <div className="row">
             <div className="section-title padd-15">
               <h2>Portfolio</h2>
+              <AnimatedWavyLine
+                text="xxxxxxxxxxxxxx"
+                colorClass="wavyLine-yellow"
+              />
             </div>
           </div>
           <div className="row">

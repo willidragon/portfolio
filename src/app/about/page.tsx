@@ -1,4 +1,5 @@
 import type { NextPage } from "next";
+import AnimatedWavyLine from "@/components/line/AnimatedWavyLine";
 
 const About: NextPage = () => {
   return (
@@ -8,6 +9,10 @@ const About: NextPage = () => {
           <div className="row">
             <div className="section-title padd-15">
               <h2>About Me</h2>
+              <AnimatedWavyLine
+                text="xxxxxxxxxxxxxx"
+                colorClass="wavyLine-yellow"
+              />
             </div>
           </div>
           <div className="row">
@@ -15,14 +20,17 @@ const About: NextPage = () => {
               <div className="row">
                 <div className="about-text padd-15">
                   <h2>
-                    I am Your name a <span>Your Expertise</span>
+                    Hi! I am William Su and I am a{" "}
+                    <span>
+                      Frontend Developer whose background is rooted in Design
+                    </span>
                   </h2>
                   <p>
                     Hi! My name is Your Name. I am a your expertise, and I am
                     very passionate and dedicated to my work. With 1 years
-                    experience as a your expertise, I have acquired the skills and
-                    knowledge necessary to make your project a success. I enjoy
-                    every step of the design process, from discussion and
+                    experience as a your expertise, I have acquired the skills
+                    and knowledge necessary to make your project a success. I
+                    enjoy every step of the design process, from discussion and
                     collaboration.
                   </p>
                 </div>
@@ -30,57 +38,53 @@ const About: NextPage = () => {
               <div className="row">
                 <div className="personal-info padd-15">
                   <div className="row">
-                    <div className="info-item padd-15">
+                    {/* <div className="info-item padd-15">
                       <p>
                         Website : <span>www.urfolio.vercel.app</span>
                       </p>
-                    </div>
+                    </div> */}
                     <div className="info-item padd-15">
                       <p>
-                        Email : <span>your@email.com</span>
+                        Email : <span>willidragon@email.com</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        Degree : <span>SSC</span>
+                        Currently : <span>Master Student at NCKU</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        Phone : <span>+99 ********</span>
+                        Phone : <span>0928113635</span>
                       </p>
                     </div>
                     <div className="info-item padd-15">
                       <p>
-                        City : <span>Your City</span>
+                        City : <span>Based in Tainan</span>
                       </p>
                     </div>
-                    <div className="info-item padd-15">
+                    {/* <div className="info-item padd-15">
                       <p>
                         Freelance : <span>Available</span>
                       </p>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="row">
                     <div className="buttons padd-15">
-                      <a
-                        href="/assets/docs/resume.pdf"
-                        target="_target"
-                        className="btn"
-                      >
+                      <a href="/CV" target="_target" className="btn">
                         Download CV
                       </a>
-                      <a
+                      {/* <a
                         href="#contact"
                         data-section-index={0}
                         className="btn hire-me"
                       >
                         Hire Me
-                      </a>
+                      </a> */}
                     </div>
                   </div>
                 </div>
-                <div className="skills padd-15">
+                {/* <div className="skills padd-15">
                   <div className="row">
                     <div className="skill-item padd-15">
                       <h5>Html5</h5>
@@ -111,7 +115,7 @@ const About: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
               <div className="row">
                 <div className="education padd-15">
