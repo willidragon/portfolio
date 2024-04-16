@@ -25,7 +25,7 @@ const Sidebar = () => {
       <div className="aside-inner">
         <div className="">
           <Link href="/">
-            <Image src="/imgs/logo.svg" alt="Logo" width={166} height={198} />
+            <Image src="imgs/logo.svg" alt="Logo" width={166} height={198} />
           </Link>
         </div>
         <ul className="nav">
