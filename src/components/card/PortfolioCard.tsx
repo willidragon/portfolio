@@ -8,9 +8,16 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
   techStack,
   role,
   imageUrl,
+  url,
+  description, // Make sure to destructure the description from props
 }) => {
   return (
-    <div className={styles.cardContainer}>
+    <a
+      href={url}
+      className={styles.cardContainer}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <div
         className={styles.imageContainer}
         style={{ backgroundImage: `url(${imageUrl})` }}
@@ -18,13 +25,23 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         {/* Background image styling applied here */}
       </div>
       <div className={styles.content}>
-        <h3 className="text-lg font-medium">{title}</h3>
-        <p className="text-sm font-medium text-gray-500 mt-2">
-          Tech Stack: {techStack}
-        </p>
-        <p className="text-sm font-medium text-gray-500">Role: {role}</p>
+        <h3 className="text-2xl font-medium">{title}</h3>
+        <p className="text-sm font-medium text-gray-500">{role}</p>
+        <div className="flex items-center space-x-2 mt-2">
+          <span className="text-sm font-medium text-gray-500">TechStack:</span>
+          {techStack.map((techImageUrl, index) => (
+            <img
+              key={index}
+              src={techImageUrl}
+              alt={`Technology ${index + 1}`}
+              className="h-6 w-auto"
+            />
+          ))}
+        </div>
+        <hr className="my-2 border-gray-300" /> {/* Divider */}
+        <div className="text-sm font-medium text-black mt-2">{description}</div>
       </div>
-    </div>
+    </a>
   );
 };
 

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
+import Image from "next/image";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
@@ -22,9 +23,9 @@ const Sidebar = () => {
         <span />
       </div>
       <div className="aside-inner">
-        <div className="logo">
-          <Link href="/" onClick={handleClose}>
-            Logo
+        <div className="logo ">
+          <Link href="/">
+            <Image src="/imgs/logo.svg" alt="Logo" width={166} height={198} />
           </Link>
         </div>
         <ul className="nav">

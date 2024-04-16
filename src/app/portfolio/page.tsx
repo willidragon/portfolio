@@ -4,10 +4,13 @@ import { PortfolioCardProps } from "@/types/types";
 const Portfolio: NextPage = () => {
   const portfolioData: PortfolioCardProps[] = [
     {
-      title: "New Dynamic Project",
-      techStack: "React, TypeScript",
-      role: "Full Stack Developer",
-      imageUrl: "/imgs/portfolio/1.jpg",
+      title: "中科Life租房網",
+      techStack: ["/imgs/techStack/WP.png", "/imgs/techStack/divi.png"],
+      role: "Frontend Developer, Visual Designer",
+      imageUrl: "/imgs/portfolio/renthouse.png",
+      url: "http://3.108.53.183/",
+      description:
+        "This project involves creating a responsive website using Wordpress and Divi theme. I worked with another backend engineer to properly set up various api endpoints.",
     },
     // Add more projects as needed
   ];
@@ -15,17 +18,18 @@ const Portfolio: NextPage = () => {
   return (
     <div>
       <section className="portfolio section" id="portfolio">
-        <div className="container">
+        <div className="container max-w-custom mx-auto">
           <div className="row">
             <div className="section-title padd-15">
               <h2>Portfolio</h2>
             </div>
           </div>
-
           <div className="row">
-            {/* Dynamic Portfolio Items generated from the imported PortfolioCard component */}
             {portfolioData.map((project, index) => (
-              <PortfolioCard key={index} {...project} />
+              <>
+                <PortfolioCard key={index} {...project} />
+                <div style={{ height: "10px" }}>&nbsp;</div>
+              </>
             ))}
           </div>
         </div>
