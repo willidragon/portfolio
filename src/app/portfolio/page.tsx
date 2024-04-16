@@ -8,7 +8,7 @@ const Portfolio: NextPage = () => {
       title: "中科Life租房網",
       techStack: ["/imgs/techStack/WP.png", "/imgs/techStack/divi.png"],
       role: "Frontend Developer, Visual Designer",
-      imageUrl: "/imgs/portfolio/renthouse.png",
+      imageUrl: "imgs/portfolio/renthouse.png",
       url: "http://3.108.53.183/",
       description:
         "This project involves creating a responsive website using Wordpress and Divi theme. I worked with another backend engineer to properly set up various api endpoints.",
