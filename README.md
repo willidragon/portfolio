@@ -1,2 +1,3 @@
-# portfolio
-personal website of William Su 2024
+Initial Commit
+
+project inspired by https://github.com/alsiam/DevFolio

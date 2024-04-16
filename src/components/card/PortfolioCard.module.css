@@ -1,0 +1,35 @@
+/* PortfolioCard.module.css */
+
+.cardContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .cardContainer {
+    flex-direction: row;
+  }
+}
+
+.imageContainer {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+@media (min-width: 768px) {
+  .imageContainer {
+    width: 600px; /* Fixed width on larger screens */
+  }
+}
+
+.content {
+  padding: 1.5rem;
+  flex-grow: 1;
+}
