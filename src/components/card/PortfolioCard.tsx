@@ -2,6 +2,7 @@
 import React from "react";
 import { PortfolioCardProps } from "@/types/types";
 import styles from "./PortfolioCard.module.css"; // Ensure path is correct
+import Image from "next/image";
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({
   title,
@@ -30,11 +31,13 @@ const PortfolioCard: React.FC<PortfolioCardProps> = ({
         <div className="flex items-center space-x-2 mt-2">
           <span className="text-sm font-medium text-gray-500">TechStack:</span>
           {techStack.map((techImageUrl, index) => (
-            <img
+            <Image
               key={index}
               src={techImageUrl}
               alt={`Technology ${index + 1}`}
               className="h-6 w-auto"
+              width={24}
+              height={24}
             />
           ))}
         </div>
