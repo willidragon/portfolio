@@ -6,7 +6,7 @@ import currentUrl from "@/urlconfig";
 
 const CV: NextPage = () => {
   // Construct the PDF URL based on the current URL configuration
-  const pdfUrl = `portfolio/williamsucv.pdf`;
+  const pdfUrl = `williamsucv.pdf`;
 
   return (
     <>
