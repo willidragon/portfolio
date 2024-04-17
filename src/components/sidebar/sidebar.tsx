@@ -52,10 +52,10 @@ const Sidebar = () => {
           </li> */}
           <li onClick={handleClose}>
             <Link
-              href="/portfolio"
-              className={`${pathUrl == "/portfolio" && "active"}`}
+              href="/projects"
+              className={`${pathUrl == "/projects" && "active"}`}
             >
-              Portfolio
+              Projects
             </Link>
           </li>
           {/* <li onClick={handleClose}>
