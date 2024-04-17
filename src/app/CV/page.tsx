@@ -6,7 +6,7 @@ import PDFPreview from "@/components/PDFPreview";
 const CV: NextPage = () => {
   return (
     <>
-      <PDFPreview pdfUrl="cv/williamsucv.pdf" />
+      <PDFPreview pdfUrl="williamsucv.pdf" />
     </>
   );
 };
