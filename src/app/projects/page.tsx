@@ -6,7 +6,7 @@ const Portfolio: NextPage = () => {
   const portfolioData: PortfolioCardProps[] = [
     {
       title: "中科Life租房網",
-      techStack: ["portfolio/imgs/techstack/wp.png", "imgs/techstack/divi.png"],
+      techStack: ["./imgs/techstack/wp.png", "imgs/techstack/divi.png"],
       role: "Frontend Developer, Visual Designer",
       imageUrl: "imgs/portfolio/renthouse.png",
       url: "http://3.108.53.183/",
